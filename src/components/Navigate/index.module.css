@@ -1,0 +1,32 @@
+.nav {
+  width: 100%;
+  background-image: url(../../assets/bgImage.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 400px;
+}
+.container {
+  max-width: 1232px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.container h1 {
+  font-family: Montserrat;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 72px;
+  letter-spacing: -0.5px;
+  padding-top: 69px;
+  color: rgba(135, 206, 235, 1);
+}
+.container p {
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 21.98px;
+  letter-spacing: 0.10000000149011612px;
+  text-align: center;
+  color: rgba(169, 169, 169, 1);
+}

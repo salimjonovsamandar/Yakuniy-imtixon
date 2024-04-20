@@ -1,0 +1,36 @@
+.ChartWrapper {
+  width: 1050px;
+  display: block;
+  height: 600px;
+  padding-top: 55px;
+  gap: 80px ;
+}
+.buttonWrapper {
+  display: flex;
+  gap: 38px;
+  margin-top: 20px;
+  
+}
+
+.buttonWrapper button {
+    margin-bottom: 50px;
+  padding: 11px 21px;
+  width: 284px;
+  border-radius: 5px;
+  background-color: transparent;
+  color: white;
+  border: 1px solid rgba(135, 206, 235, 1);
+  gap: 38px;
+
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19.5px;
+  text-align: left;
+  transition: all 0.5s ease;
+}
+.buttonWrapper button:hover {
+  color: black;
+  background-color: rgba(135, 206, 235, 1);
+  cursor: pointer;
+}

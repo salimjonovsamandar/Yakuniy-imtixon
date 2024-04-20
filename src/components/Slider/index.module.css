@@ -1,0 +1,49 @@
+.wrapper {
+  max-width: 1232px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 100px;
+  padding-right: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  text-decoration: none;
+}
+.slide img {
+  width: 80px;
+  height: 80px;
+}
+.CaruselWrapper {
+  margin-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+.caruselItem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-transform: uppercase;
+}
+.caruselItem span {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18.75px;
+  text-align: left;
+  color: white;
+  margin-top: 10px;
+  margin-right: 4px;
+}
+.caruselItem p {
+  font-family: Roboto;
+  font-size: 21.48px;
+  font-weight: 500;
+  line-height: 25.18px;
+  text-align: left;
+  color: white;
+}
