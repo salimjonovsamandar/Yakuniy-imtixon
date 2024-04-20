@@ -24,6 +24,13 @@ function Index() {
     setState({ ...state, right: true });
   };
 
+  const removeItem = (index) => {
+    const deleteWatchItem = [...watchItem];
+    deleteWatchItem.splice(index, 1);
+    localStorage.setItem("watchList", JSON.stringify(deleteWatchItem));
+    setWatchItem(deleteWatchItem);
+  };
+
   return (
     <div>
       {["right"].map((anchor) => (
@@ -42,9 +49,13 @@ function Index() {
                       <div key={index} className={styles.CoinWrapper}>
                         <img src={el.image} width={118} height={118} alt="" />
                         <p>₹{el.current_price}</p>
-                        <button onClick={(()=>{
-                          
-                        })}>Remove</button>
+                        <button
+                          onClick={() => {
+                            removeItem(index);
+                          }}
+                        >
+                          Remove
+                        </button>
                       </div>
                     );
                   })}

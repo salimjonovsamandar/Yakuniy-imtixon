@@ -8,10 +8,6 @@ import Loader from "../../Loader";
 import { Data } from "../../../App";
 import { useContext } from "react";
 
-export function numberWithCommas(x) {
-  return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-}
-
 function MorePage() {
   const { id } = useParams();
   const [coinInfo, setCoinInfo] = useState(null);
@@ -57,20 +53,24 @@ function MorePage() {
         <h3>{coinInfo.name}</h3>
         <h5>{ReactHtmlParser(coinInfo.description.en.split(". ")[0])}</h5>
         <p>
-          Rank: <span>{numberWithCommas(coinInfo.market_cap_rank)}</span>
+          Rank: <span>{coinInfo.market_cap_rank}</span>
         </p>
         <p>
-          Current Price: {Icon}{" "}
+          Current Price:{" "}
           <span>
+            {Icon}{" "}
             {Number(
               coinInfo?.market_data.market_cap[Item.toLowerCase()]
-            )}
+            ).toLocaleString()}
           </span>
         </p>
         <p>
           Market Cap:{" "}
           <span>
-            {Icon} {coinInfo.market_data.current_price[Item.toLowerCase()]}
+            {Icon}{" "}
+            {Number(
+              coinInfo?.market_data.current_price[Item.toLowerCase()]
+            ).toLocaleString()}
           </span>
         </p>
       </div>

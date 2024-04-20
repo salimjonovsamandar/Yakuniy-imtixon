@@ -39,6 +39,7 @@ function Index() {
               id="demo-simple-select"
               className={styles.select}
               style={{ border: "none" }}
+              value={Item}
               onChange={handleCurrencyChange}
             >
               <MenuItem value={"USD"}>USD</MenuItem>

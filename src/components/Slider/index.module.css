@@ -23,6 +23,7 @@
   padding-right: 100px;
 }
 .caruselItem {
+  width: 200px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -46,4 +47,5 @@
   line-height: 25.18px;
   text-align: left;
   color: white;
+  
 }
